@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Food Delight</title>
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand: #466d1d;
+      }
+    </style>
+
+    <!-- Modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="bg-brand text-amber-50 p-4 text-center">
+      <div class="flex justify-between w-full">
+        <span>Delight Dishes</span>
+        <nav>
+          <ul class="flex gap-4">
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="text-stone-700 bg-amber-50">
+      <!-- Section 1: Featured Dish -->
+      <section class="">
+        <div
+          class="h-126 bg-[url(./images/pizza.png)] bg-center bg-cover relative w-full max-w-[1640px] mx-auto"
+        >
+          <div class="absolute size-full bg-stone-950/30"></div>
+          <h2
+            class="absolute text-stone-50 font-semibold mb-4 text-6xl md:text-8xl top-30 left-5"
+          >
+            Italian Pizza
+          </h2>
+          <div
+            class="absolute h-px w-[90%] max-w-100 bg-stone-50 top-65 left-5"
+          ></div>
+          <p
+            class="absolute mt-4 text-stone-50 text-xl top-70 max-w-100 left-5"
+          >
+            Treat yourself to a signature dish created by our chef, prepared
+            with the freshest ingredients and a touch of culinary magic.
+          </p>
+        </div>
+      </section>
+
+      <section id="categories" class="py-16 bg-amber-400/20">
+        <div class="container mx-auto text-center px-8">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-8">
+            Explore Recipe Categories
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <a
+              href=""
+              class="block bg-red-400/20 hover:bg-red-500/20 p-6 rounded-lg shadow-lg transition-colors duration-300"
+            >
+              <h3 class="text-xl font-medium text-gray-700 mb-4">Appetizers</h3>
+              <p class="text-gray-500">
+                Delicious starters to kick off your meal with flavor.
+              </p>
+            </a>
+            <a
+              href=""
+              class="block bg-red-400/20 hover:bg-red-500/20 p-6 rounded-lg shadow-lg transition-colors duration-300"
+            >
+              <h3 class="text-xl font-medium text-gray-700 mb-4">
+                Main Dishes
+              </h3>
+              <p class="text-gray-500">
+                Hearty and satisfying meals for the main course.
+              </p>
+            </a>
+            <a
+              href=""
+              class="block bg-red-400/20 hover:bg-red-500/20 p-6 rounded-lg shadow-lg transition-colors duration-300"
+            >
+              <h3 class="text-xl font-medium text-gray-700 mb-4">Desserts</h3>
+              <p class="text-gray-500">
+                Sweet treats to finish your meal on a high note.
+              </p>
+            </a>
+            <a
+              href=""
+              class="block bg-red-400/20 hover:bg-red-500/20 p-6 rounded-lg shadow-lg transition-colors duration-300"
+            >
+              <h3 class="text-xl font-medium text-gray-700 mb-4">Salads</h3>
+              <p class="text-gray-500">
+                Fresh and healthy salads for a light bite.
+              </p>
+            </a>
+            <a
+              href=""
+              class="block bg-red-400/20 hover:bg-red-500/20 p-6 rounded-lg shadow-lg transition-colors duration-300"
+            >
+              <h3 class="text-xl font-medium text-gray-700 mb-4">Soups</h3>
+              <p class="text-gray-500">
+                Warm, comforting soups for any occasion.
+              </p>
+            </a>
+            <a
+              href=""
+              class="block bg-red-400/20 hover:bg-red-500/20 p-6 rounded-lg shadow-lg transition-colors duration-300"
+            >
+              <h3 class="text-xl font-medium text-gray-700 mb-4">Drinks</h3>
+              <p class="text-gray-500">
+                Refreshing beverages to pair with your meals.
+              </p>
+            </a>
+            <a
+              href=""
+              class="block bg-red-400/20 hover:bg-red-500/20 p-6 rounded-lg shadow-lg transition-colors duration-300"
+            >
+              <h3 class="text-xl font-medium text-gray-700 mb-4">Vegan</h3>
+              <p class="text-gray-500">
+                Plant-based recipes for a healthy lifestyle.
+              </p>
+            </a>
+            <a
+              href=""
+              class="block bg-red-400/20 hover:bg-red-500/20 p-6 rounded-lg shadow-lg transition-colors duration-300"
+            >
+              <h3 class="text-xl font-medium text-gray-700 mb-4">Grilled</h3>
+              <p class="text-gray-500">
+                Smoky and delicious grilled dishes for every taste.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Popular Recipes -->
+      <section id="recipes" class="py-8">
+        <div class="w-full max-w-[1440px] mx-auto px-2 md:px-4 mg:px-5">
+          <h2 class="text-2xl font-semibold mb-4">Popular Recipes</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9">
+            <a
+              href=""
+              class="block h-96 bg-lime-100 hover:bg-lime-200 rounded-lg overflow-hidden shadow-md transition-colors duration-300"
+            >
+              <div class="w-full h-80">
+                <img
+                  src="./images/noodles.jpg"
+                  alt="Recipe 1"
+                  class="w-full h-full object-center object-cover"
+                />
+              </div>
+              <p class="mt-4 text-center text-lg">Spicy Thai Noodles</p>
+            </a>
+
+            <a
+              href=""
+              class="block bg-lime-100 hover:bg-lime-200 rounded-lg overflow-hidden shadow-md transition-colors duration-300"
+            >
+              <div class="w-full h-80">
+                <img
+                  src="./images/pizza.png"
+                  alt="Recipe 1"
+                  class="w-full h-full object-center object-cover"
+                />
+              </div>
+              <p class="mt-4 text-center text-lg">Classic Italian Pizza</p>
+            </a>
+
+            <a
+              href=""
+              class="block h-96 bg-lime-100 hover:bg-lime-200 rounded-lg overflow-hidden shadow-md transition-colors duration-300"
+            >
+              <div class="w-full h-80">
+                <img
+                  src="./images/cheesecake.jpg"
+                  alt="Recipe 1"
+                  class="w-full h-full object-center object-cover"
+                />
+              </div>
+              <p class="mt-4 text-center text-lg">Spicy Thai Noodles</p>
+            </a>
+
+            <a
+              href=""
+              class="block h-96 bg-lime-100 hover:bg-lime-200 rounded-lg overflow-hidden shadow-md transition-colors duration-300"
+            >
+              <div class="w-full h-80">
+                <img
+                  src="./images/macaroons.jpg"
+                  alt="Recipe 1"
+                  class="w-full h-full object-center object-cover"
+                />
+              </div>
+              <p class="mt-4 text-center text-lg">Spicy Thai Noodles</p>
+            </a>
+            <a
+              href=""
+              class="block h-96 bg-lime-100 hover:bg-lime-200 rounded-lg overflow-hidden shadow-md transition-colors duration-300"
+            >
+              <div class="w-full h-80">
+                <img
+                  src="./images/noodles.jpg"
+                  alt="Recipe 1"
+                  class="w-full h-full object-center object-cover"
+                />
+              </div>
+              <p class="mt-4 text-center text-lg">Spicy Thai Noodles</p>
+            </a>
+
+            <a
+              href=""
+              class="block bg-lime-100 hover:bg-lime-200 rounded-lg overflow-hidden shadow-md transition-colors duration-300"
+            >
+              <div class="w-full h-80">
+                <img
+                  src="./images/pizza.png"
+                  alt="Recipe 1"
+                  class="w-full h-full object-center object-cover"
+                />
+              </div>
+              <p class="mt-4 text-center text-lg">Spicy Thai Noodles</p>
+            </a>
+            <a
+              href=""
+              class="block bg-lime-100 hover:bg-lime-200 rounded-lg overflow-hidden shadow-md transition-colors duration-300"
+            >
+              <div class="w-full h-80">
+                <img
+                  src="./images/pizza.png"
+                  alt="Recipe 1"
+                  class="w-full h-full object-center object-cover"
+                />
+              </div>
+              <p class="mt-4 text-center text-lg">Spicy Thai Noodles</p>
+            </a>
+
+            <a
+              href=""
+              class="block h-96 bg-lime-100 hover:bg-lime-200 rounded-lg overflow-hidden shadow-md transition-colors duration-300"
+            >
+              <div class="w-full h-80">
+                <img
+                  src="./images/cheesecake.jpg"
+                  alt="Recipe 1"
+                  class="w-full h-full object-center object-cover"
+                />
+              </div>
+              <p class="mt-4 text-center text-lg">Spicy Thai Noodles</p>
+            </a>
+
+            <a
+              href=""
+              class="block h-96 bg-lime-100 hover:bg-lime-200 rounded-lg overflow-hidden shadow-md transition-colors duration-300"
+            >
+              <div class="w-full h-80">
+                <img
+                  src="./images/macaroons.jpg"
+                  alt="Recipe 1"
+                  class="w-full h-full object-center object-cover"
+                />
+              </div>
+              <p class="mt-4 text-center text-lg">Spicy Thai Noodles</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand text-amber-50 text-center py-8">
+      <div class="w-full max-w-[1640px] mx-auto px-2 md:px-4 mg:px-5">
+        <p>Food Delight. Recipes for all occasions.</p>
+      </div>
+    </footer>
+  </body>
+</html>
