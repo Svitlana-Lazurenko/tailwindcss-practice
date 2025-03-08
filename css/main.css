@@ -3,7 +3,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-footer {
+header,
+footer,
+#categories {
   font-family: "Open Sans", sans-serif;
 }
 
