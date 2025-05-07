@@ -1,0 +1,2 @@
+/* If you want your custom @keyframes rules to always be included even when not adding
+an --animate-* theme variable, define them outside of @theme instead. */

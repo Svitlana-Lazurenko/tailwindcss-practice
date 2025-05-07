@@ -1,0 +1,30 @@
+/* --------- Example of nesting -----------*/
+/* body {
+  h1 {
+  }
+  p {
+  }
+} */
+
+/* ----------- Example of usage of variable -----------*/
+/* p {
+  color: var(--color-brand);
+} */
+
+/* Also it can use in arbitrary values as rounded-[calc(var(--radius-xl)-1px)] 
+and in JavaScript as
+<motion.div animate={{ backgroundColor: "var(--color-blue-500)" }} /> 
+or 
+let styles = getComputedStyle(document.documentElement);
+let shadow = styles.getPropertyValue("--shadow-xl"); */
+
+/* ---------Example of using variant ---------- */
+/* use the @variant directive to apply a Tailwind variant within custom CSS */
+.my-element {
+  background: white;
+  @variant dark {
+    @variant hover {
+      background: black;
+    }
+  }
+}

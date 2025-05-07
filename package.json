@@ -1,0 +1,13 @@
+{
+  "name": "tailwindcss-practice-2",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "tailwindcss -i ./css/main.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.5"
+  }
+}

@@ -1,0 +1,76 @@
+@theme {
+  /*=========== Using a custom theme ============ */
+  /* --*: initial; */
+
+  /*============== Utilities =================== */
+  --color-brand: #466d1d;
+  --font-roboto: Roboto, sans-serif;
+  --font-open-sans: Open Sans, sans-serif;
+
+  /* -------- Overriding the default colors: ----------- */
+  /* --color-*: initial;
+    --color-white: #fff;
+    --color-midnight: #121063; */
+
+  /* ---------- Defining animation keyframes ------------ */
+  /* Define the @keyframes rules for your --animate-* theme variables 
+    within @theme to include them in your generated CSS */
+  --animate-spin: spin 5s linear infinite;
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* ============== Variants ================ */
+  /* --breakpoint-3xl: 120rem; */
+}
+
+/* ================= Extending Preflight ===================== */
+@layer base {
+  button {
+    cursor: pointer;
+  }
+}
+
+/* ================= Custom utilities ==================== */
+/* Simple utility */
+@utility content-auto {
+  content-visibility: auto;
+}
+
+/* Complex utility */
+@utility scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* Functional utilities:
+https://tailwindcss.com/docs/adding-custom-styles#functional-utilities */
+
+/* ================== Custom variants ================= */
+@custom-variant theme-midnight {
+  &:where([data-theme="midnight"] *) {
+    @slot;
+  }
+}
+/*  You can use it as
+<html data-theme="midnight">
+  <button class="theme-midnight:bg-black ..."></button>
+</html> */
+
+/* Shorthand syntax */
+/* @custom-variant theme-midnight (&:where([data-theme="midnight"] *)); */
+
+/* When a custom variant has multiple rules */
+@custom-variant any-hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @slot;
+    }
+  }
+}
